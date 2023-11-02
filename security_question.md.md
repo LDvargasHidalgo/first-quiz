@@ -1,0 +1,6 @@
+#Mejores Prácticas de Seguridad según OWASP Top 10
+Para garantizar la seguridad de mi sistema según OWASP Top 10, me centraría en varios aspectos clave. Primero, debemos asegurarnos de proteger contra inyecciones de código y errores de autenticación, implementando consultas parametrizadas y autenticación segura, incluyendo prácticas como la autenticación de dos factores (2FA). Es necesario manejar correctamente la exposición de datos sensibles, cifrando los datos y controlando estrictamente quién tiene acceso a ellos.
+
+Además,podemos evitar vulnerabilidades como configuraciones inseguras, implementando políticas de seguridad adecuadas en los servicios de Amazon Web Services y en los contenedores Kubernetes. También es importante prestar  atención a los posibles ataques de Cross-Site Scripting (XSS) mediante la validación adecuada de las entradas del usuario y la implementación de encabezados de seguridad del navegador.
+
+Para proteger contra componentes con vulnerabilidades conocidas, debemos mantener todas las bibliotecas y componentes actualizados y utilizaría herramientas automáticas para detectar posibles problemas. Finalmente, establecer un sólido sistema de registro y monitoreo para identificar y responder rápidamente a cualquier actividad inusual, asegurando así la seguridad continua del sistema según las pautas de OWASP Top 10.

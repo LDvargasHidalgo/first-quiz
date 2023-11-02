@@ -52,24 +52,3 @@ WHERE p.name = 'bessie' AND NOT EXISTS (
 );
 """
 
-# Ejecuta las consultas SQL y muestra los resultados.
-if __name__ == "__main__":
-    # Ejecuta la consulta 4.A
-    c.execute(sql_pets_owned_by_nobody)
-    pets_owned_by_nobody = c.fetchall()
-    print("Mascotas sin dueño:")
-    print(pets_owned_by_nobody)
-
-    # Ejecuta la consulta 4.B
-    c.execute(sql_pets_older_than_owner)
-    pets_older_than_owner = c.fetchone()[0]
-    print("Número de mascotas mayores que sus propietarios:", pets_older_than_owner)
-
-    # Ejecuta la consulta 4.C
-    c.execute(sql_only_owned_by_bessie)
-    pets_only_owned_by_bessie = c.fetchall()
-    print("Mascotas propiedad exclusiva de Bessie:")
-    print(pets_only_owned_by_bessie)
-
-    # Cierra la conexión a la base de datos.
-    conn.close()
